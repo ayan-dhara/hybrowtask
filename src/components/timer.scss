@@ -1,0 +1,28 @@
+.timer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  animation: timer 5s linear forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9em;
+  font-weight: 500;
+  @keyframes timer {
+    0% {
+      opacity: 0;
+      color: #63B4FC;
+    }
+    10%, 95% {
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      color: #45EB9D;
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import React from 'react';
-import useStorage from "../hooks/useStorage";
+import React from 'react'
+import useStorage from '../hooks/useStorage'
 import './tnc.scss'
 
 const TnC = ({proceed}: any) => {
@@ -22,7 +22,7 @@ const TnC = ({proceed}: any) => {
           <label htmlFor="name">Name<span>*</span></label>
           <input onChange={(e) => setName(e.target.value)} value={name} required={true}
                  placeholder="Enter full name"
-                 id="name" type="text" pattern="[A-Za-z\.\ ]*"/>
+                 id="name" type="text" pattern="[A-Za-z\. ]*"/>
         </div>
         <div>
           <label htmlFor="phone">Phone<span>*</span></label>
